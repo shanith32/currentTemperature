@@ -1,13 +1,13 @@
 {
-  "main.css": "/currentTemperature/static/css/main.4dae660c.chunk.css",
-  "main.js": "/currentTemperature/static/js/main.a26068bf.chunk.js",
-  "main.js.map": "/currentTemperature/static/js/main.a26068bf.chunk.js.map",
+  "main.css": "/currentTemperature/static/css/main.b44b7d3c.chunk.css",
+  "main.js": "/currentTemperature/static/js/main.52b9397d.chunk.js",
+  "main.js.map": "/currentTemperature/static/js/main.52b9397d.chunk.js.map",
   "static/js/1.65a888d4.chunk.js": "/currentTemperature/static/js/1.65a888d4.chunk.js",
   "static/js/1.65a888d4.chunk.js.map": "/currentTemperature/static/js/1.65a888d4.chunk.js.map",
   "runtime~main.js": "/currentTemperature/static/js/runtime~main.c757564e.js",
   "runtime~main.js.map": "/currentTemperature/static/js/runtime~main.c757564e.js.map",
-  "static/css/main.4dae660c.chunk.css.map": "/currentTemperature/static/css/main.4dae660c.chunk.css.map",
+  "static/css/main.b44b7d3c.chunk.css.map": "/currentTemperature/static/css/main.b44b7d3c.chunk.css.map",
   "index.html": "/currentTemperature/index.html",
-  "precache-manifest.00c3de4cf106d42b85f60a265d7ca9cd.js": "/currentTemperature/precache-manifest.00c3de4cf106d42b85f60a265d7ca9cd.js",
+  "precache-manifest.7525e02be968160d0181e2d3a7d890f8.js": "/currentTemperature/precache-manifest.7525e02be968160d0181e2d3a7d890f8.js",
   "service-worker.js": "/currentTemperature/service-worker.js"
 }
