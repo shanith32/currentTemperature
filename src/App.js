@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import axios from "axios";
 
@@ -8,6 +7,7 @@ class App extends Component {
     super();
     this.state = {
       weather: null,
+      temperature: null,
       city: ""
     };
     this.handleChange = this.handleChange.bind(this);
@@ -17,7 +17,9 @@ class App extends Component {
   getTemperature() {
     if (this.state.weather !== null) {
       const { weather } = this.state;
-      console.log("TEMP:", weather.main.temp);
+      console.log("Temperature: ", weather.main.temp);
+      const temperature = `${weather.main.temp} °F`;
+      this.setState({ temperature: temperature });
     }
   }
 
@@ -32,7 +34,9 @@ class App extends Component {
         this.getTemperature();
       })
       .catch(error => {
-        console.log("API ERROR", error);
+        console.log("API ERROR: ", error);
+        this.setState({ temperature: null });
+        alert("Wrong city name!");
       });
   }
 
@@ -41,50 +45,36 @@ class App extends Component {
   }
 
   handleSubmit(event) {
-    console.log("City:", this.state.city);
+    console.log("City: ", this.state.city);
     this.getWeather(this.state.city);
     event.preventDefault();
   }
 
   render() {
-    // if (this.state.weather !== null) {
-    //   console.log(this.state.weather);
-    // }
-    // const { weather } = this.state;
-    // if (weather !== null) console.log(weather);
-
     return (
-      <form onSubmit={this.handleSubmit}>
-        <label>
-          Name:
-          <input
-            type="text"
-            value={this.state.city}
-            onChange={this.handleChange}
-          />
-        </label>
-        <input type="submit" value="Submit" />
-      </form>
+      <div className="App">
+        <header className="App-header">
+          <p>
+            Get Current Temperature{" "}
+            <span role="img" aria-label="Thermometer">
+              🌡️
+            </span>
+          </p>
+          <form onSubmit={this.handleSubmit}>
+            <label>
+              City Name?
+              <input
+                type="text"
+                value={this.state.city}
+                onChange={this.handleChange}
+              />
+            </label>
+            <input type="submit" value="Submit" />
+          </form>
+          <h1>{this.state.temperature}</h1>
+        </header>
+      </div>
     );
-
-    // return (
-    //   <div className="App">
-    //     <header className="App-header">
-    //       <img src={logo} className="App-logo" alt="logo" />
-    //       <p>
-    //         Edit <code>src/App.js</code> and save to reload.
-    //       </p>
-    //       <a
-    //         className="App-link"
-    //         href="https://reactjs.org"
-    //         target="_blank"
-    //         rel="noopener noreferrer"
-    //       >
-    //         Learn React
-    //       </a>
-    //     </header>
-    //   </div>
-    // );
   }
 }
 
