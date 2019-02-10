@@ -26,7 +26,7 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "homepage": "https://shanith32.github.io/currentTemperature/",
+  "homepage": "http://shanith32.github.io/currentTemperature",
   "devDependencies": {
     "gh-pages": "^2.0.1"
   }
