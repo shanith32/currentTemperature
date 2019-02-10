@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/currentTemperature/static/css/main.b44b7d3c.chunk.css"
   },
   {
-    "revision": "8ef1cde50c797d178460639ff5cb2b1a",
+    "revision": "7566f383d9f46f99631758db59ae2d14",
     "url": "/currentTemperature/index.html"
   }
 ];
