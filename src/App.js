@@ -14,6 +14,7 @@ class App extends Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
+  // Set temperature state
   getTemperature() {
     if (this.state.weather !== null) {
       const { weather } = this.state;
@@ -23,6 +24,7 @@ class App extends Component {
     }
   }
 
+  // Fetch the weather by the city from openweathermap
   getWeather(city) {
     axios({
       method: "get",
@@ -40,16 +42,19 @@ class App extends Component {
       });
   }
 
+  // Update the city state while typing
   handleChange(event) {
     this.setState({ city: event.target.value });
   }
 
+  // Set the city state and call get Weather function
   handleSubmit(event) {
     console.log("City: ", this.state.city);
     this.getWeather(this.state.city);
     event.preventDefault();
   }
 
+  // Render the app
   render() {
     return (
       <div className="App">
