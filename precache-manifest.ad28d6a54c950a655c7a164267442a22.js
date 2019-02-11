@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/currentTemperature/static/js/runtime~main.c757564e.js"
   },
   {
-    "revision": "52b9397d5cd79f612340",
-    "url": "/currentTemperature/static/js/main.52b9397d.chunk.js"
+    "revision": "fcdef65e908c5b8decff",
+    "url": "/currentTemperature/static/js/main.fcdef65e.chunk.js"
   },
   {
     "revision": "65a888d45dad63b7f23e",
     "url": "/currentTemperature/static/js/1.65a888d4.chunk.js"
   },
   {
-    "revision": "52b9397d5cd79f612340",
+    "revision": "fcdef65e908c5b8decff",
     "url": "/currentTemperature/static/css/main.b44b7d3c.chunk.css"
   },
   {
-    "revision": "c2a34dc159264b8c08fe7d9a10303df1",
+    "revision": "b66ee818f55ee98f4c1abebb1ee6c108",
     "url": "/currentTemperature/index.html"
   }
 ];
