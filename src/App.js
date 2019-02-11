@@ -18,7 +18,7 @@ class App extends Component {
     if (this.state.weather !== null) {
       const { weather } = this.state;
       console.log("Temperature: ", weather.main.temp);
-      const temperature = `${weather.main.temp} °F`;
+      const temperature = `${parseInt(weather.main.temp)} °F`;
       this.setState({ temperature: temperature });
     }
   }
